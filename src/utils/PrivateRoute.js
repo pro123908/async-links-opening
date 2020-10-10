@@ -7,11 +7,7 @@ const PrivateRoute = ({ component: OriginalComponent, ...rest }) => {
     <Route
       {...rest}
       render={(props) =>
-        Object.keys(store.getState().Auth.googleUser).length > 0 ? (
-          <OriginalComponent {...props} />
-        ) : (
-          <Redirect to="login" />
-        )
+        true ? <OriginalComponent {...props} /> : <Redirect to="login" />
       }
     />
   );

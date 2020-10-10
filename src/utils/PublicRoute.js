@@ -7,12 +7,7 @@ const PublicRoute = ({ component: OriginalComponent, restricted, ...rest }) => {
     <Route
       {...rest}
       render={(props) =>
-        Object.keys(store.getState().Auth.googleUser).length > 0 &&
-        restricted ? (
-          <Redirect to="home" />
-        ) : (
-          <OriginalComponent {...props} />
-        )
+        true ? <Redirect to="home" /> : <OriginalComponent {...props} />
       }
     />
   );

@@ -1,0 +1,14 @@
+.update {
+  padding: 2rem 3rem;
+  &__link {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+
+    &:hover {
+      color: $blue-1;
+    }
+  }
+}

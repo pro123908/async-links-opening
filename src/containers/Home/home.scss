@@ -1,0 +1,36 @@
+.home-container {
+  background-color: #1b75ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .home {
+    &__bg {
+      background-image: url(../../assets/xord-bg.png);
+      background-size: cover;
+      height: 100vh;
+      width: 100vh;
+    }
+
+    &__iframe {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border: 0;
+    }
+
+    &__link {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      padding: 0 1rem;
+      font-weight: 500;
+      color: #f65c34;
+    }
+  }
+}
