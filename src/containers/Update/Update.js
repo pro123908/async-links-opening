@@ -37,7 +37,7 @@ const Login = () => {
                 {key} : {lsLinks[key]}
               </div>
             ))
-          : "Loading..."}
+          : "Loading.."}
       </div>
     </div>
   );
